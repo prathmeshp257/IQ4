@@ -1,0 +1,25 @@
+$breakpoints: (
+	"small": 767px,
+	"medium": 992px,
+	"large": 1200px,
+) !default;
+
+@mixin when-device-is-at-most($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media (max-width: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	} @else {
+		@warn "Couldn't find that breakpoint, please select from: #{map-keys($breakpoints)}";
+	}
+}
+
+@mixin when-device-is-at-least($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media (min-width: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	} @else {
+		@warn "Couldn't find that breakpoint, please select from: #{map-keys($breakpoints)}";
+	}
+}

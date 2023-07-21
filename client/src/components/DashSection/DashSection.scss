@@ -1,0 +1,84 @@
+.dash-section {
+	display: flex;
+	margin: 8px 0px;
+	background: $color-white;
+	border-radius: 10px;
+	box-shadow: 2px 4px 8px #a8a8a8;
+
+	&__variant-default {
+		width: 220px;
+		min-width: 220px;
+	}
+
+	&__variant-compact {
+		width: 170px;
+		min-width: 170px;
+	}
+
+	&__main-default {
+		padding: 8px 0 8px 8px;
+		width: 70%;
+	}
+
+	&__main-compact {
+		padding: 8px 0 8px 8px;
+		width: 100%;
+	}
+
+	&__ratio {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		position: relative;
+		background: $color-darkGray;
+		border-top-right-radius: 8px;
+		border-bottom-right-radius: 8px;
+		width: 32%;
+	}
+
+	&__content {
+		display: flex;
+		align-items: baseline;
+	}
+
+	&__value {
+		margin-top: 4px;
+		font-weight: 600;
+		font-size: 22px;
+	}
+
+	&__type {
+		margin-left: 4px;
+		font-size: 12px;
+	}
+
+	&__title--green {
+		@extend .title--base;
+		color: $color-green;
+	}
+
+	&__title--blue {
+		@extend .title--base;
+		color: $color-blue;
+	}
+
+	&__title--purple {
+		@extend .title--base;
+		color: $color-purple;
+	}
+
+	&__title--danger {
+		@extend .title--base;
+		color: $color-danger;
+	}
+
+	&__title--yellow {
+		@extend .title--base;
+		color: $color-yellow;
+	}
+}
+
+.title--base {
+	font-size: 13px;
+	font-weight: 600;
+}

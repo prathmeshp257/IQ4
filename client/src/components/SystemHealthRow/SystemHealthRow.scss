@@ -1,0 +1,24 @@
+.system-health-row {
+	margin-bottom: 24px;
+	background-color: white;
+	padding: 16px;
+	border-radius: 10px;
+	box-shadow: 2px 3px 7px #a8a8a871;
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		@include when-device-is-at-most('small') {
+			display: block;
+		}
+	}
+
+	&__title {
+		color: $color-darker;
+		font-size: 19px;
+		transform: scale(1, 0.93);
+		margin: 0;
+	}
+}

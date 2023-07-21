@@ -1,0 +1,145 @@
+/* COLORS */
+$color-yellow-faded: #daaf022b;
+$color-yellow-dim: #daaf0257;
+$color-yellow: #daae02;
+$color-yellow-dark: #b49000;
+$color-yellow-darker: #886d00;
+$color-orange-dim: #da7c0259;
+$color-orange: #da7c02;
+$color-brown-dim: #3f240152;
+$color-brown: #3f2401;
+$color-green-faded: #0ec8361a;
+$color-green-dim: #0ec8367a;
+$color-green-pale: #0ec836a2;
+$color-green: #0ec837;
+$color-green-dark: #06a328;
+$color-green-darker: #017c1b;
+$color-light-gone: #f6f6f60a;
+$color-light-faded: #f6f6f612;
+$color-light-dimmer: #ffffff31;
+$color-light-dim: #ffffffb0;
+$color-light: #f6f6f6;
+$color-lightGray: #e2e2e2;
+$color-gray-faded: #c5c5c538;
+$color-gray-dim: #c5c5c5a1;
+$color-gray: #c5c5c5;
+$color-grayer: #707070;
+$color-darkGray: #595858;
+$color-darkerGray: #404040;
+$color-dark: #4e4e4e;
+$color-darker: #141414;
+$color-white: #fff;
+$color-blue-faded: #0095ff1e;
+$color-blue-dim: #0095ff8f;
+$color-blue: #0094ff;
+$color-blue-dark: #006bb8;
+$color-blue-darker: #00508a;
+$color-purple-faded: #6f00ff18;
+$color-purple-dim: #6f00ff51;
+$color-purple: #7000ff;
+$color-purple-dark: #2a2a39;
+$color-purple-darker: #31333f;
+$color-purple-dark-dim: #4144549f;
+$color-purple-dark-faded: #4144545b;
+$color-purple-dark-gone: #41445412;
+$color-danger-dim: #eb092f55;
+$color-danger: #eb092f;
+$color-magenta-dim: #e8095455;
+$color-magenta: #e80954;
+$color-orange: #ff9d00;
+$color-danger-dark: #c50024;
+$color-danger-darker: #96001b;
+$color-warning: #f6cf2a;
+$color-success: #29d846;
+$color-teal: #02b88d;
+
+/* FONT COLORS */
+.--color-white {
+	color: $color-white !important;
+}
+
+.--color-gray {
+	color: $color-gray !important;
+}
+
+.--color-dark-gray {
+	color: $color-darkGray !important;
+}
+
+.--color-danger {
+	color: $color-danger !important;
+}
+
+.--color-danger {
+	color: $color-magenta !important;
+}
+
+.--color-warning {
+	color: $color-warning !important;
+}
+
+.--color-orange {
+	color: $color-orange !important;
+}
+
+.--color-success {
+	color: $color-success !important;
+}
+
+.--color-teal {
+	color: $color-teal !important;
+}
+
+.--color-blue {
+	color: $color-blue !important;
+}
+
+.--color-purple {
+	color: $color-purple !important;
+}
+
+.--color-transparent {
+	color: transparent;
+}
+
+/* BACKGROUND COLORS*/
+
+.--bg-color-gray {
+	background-color: $color-gray !important;
+}
+
+.--bg-color-danger {
+	background-color: $color-danger !important;
+}
+
+.--bg-color-magenta {
+	background-color: $color-danger !important;
+}
+
+.--bg-color-warning {
+	background-color: $color-warning !important;
+}
+
+.--bg-color-orange {
+	background-color: $color-orange !important;
+}
+
+.--bg-color-success {
+	background-color: $color-success !important;
+}
+
+.--bg-color-teal {
+	background-color: $color-teal !important;
+}
+
+.--bg-color-blue {
+	background-color: $color-blue !important;
+}
+
+.--bg-color-purple {
+	background-color: $color-purple !important;
+}
+
+.--bg-color-white {
+	background-color: $color-white !important;
+}

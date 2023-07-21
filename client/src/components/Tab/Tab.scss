@@ -1,0 +1,203 @@
+.tab {
+	&__link--default {
+		display: flex;
+		cursor: pointer;
+		font-weight: 500;
+		background-color: transparent;
+		border: none;
+		font-size: $text-mx;
+		color: $color-light;
+		min-height: 38px;
+		align-items: center;
+		padding: 5px 12px;
+		border-radius: 10px;
+		@include transition-ease-medium;
+
+		&:hover {
+			@include transition-ease-medium;
+			color: $color-light;
+			background-color: $color-light-faded;
+		}
+
+		&:focus {
+			@include transition-ease-medium;
+			color: $color-light;
+			background-color: $color-light-dimmer;
+			outline: none;
+		}
+
+		@include when-device-is-at-most('small') {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			justify-items: center;
+
+			border-top: 2px solid transparent;
+			border-radius: 0;
+		}
+
+		&.--active {
+			border: none;
+			@include transition-ease-medium;
+			color: $color-teal;
+			outline: none;
+
+			&:hover,
+			&:focus {
+				@include transition-ease-medium;
+				color: $color-teal;
+				background-color: #ffffff10;
+
+				@include when-device-is-at-most('small') {
+					color: $color-teal;
+				}
+			}
+
+			@include when-device-is-at-most('small') {
+				border-top: 2px solid $color-teal;
+			}
+		}
+	}
+
+	&__link--compact {
+		display: flex;
+		cursor: pointer;
+		font-weight: 600;
+		min-width: 45px;
+		background-color: transparent;
+		border: none;
+		justify-content: center;
+		color: $color-purple-dark-dim;
+		padding: 5px 10px;
+		border-radius: 10px;
+		min-height: 36px;
+		align-items: center;
+
+		@include transition-ease-medium;
+
+		@include when-device-is-at-least('medium') {
+			font-size: 14px;
+		}
+
+		@include when-device-is-at-most('medium') {
+			font-size: 12px;
+		}
+
+		@include when-device-is-at-most('small') {
+			font-size: 10px;
+		}
+
+		&:active,
+		&:hover,
+		&:focus {
+			@include transition-ease-medium;
+			color: $color-light !important;
+			background-color: $color-dark;
+		}
+	}
+}
+
+.tab__link--base {
+	color: $color-light;
+	@include transition-ease-medium;
+
+	&:hover,
+	&:focus {
+		@include transition-ease-medium;
+		color: $color-white;
+	}
+}
+
+.tab__link--color-light {
+	@extend .tab__link--base;
+	color: $color-dark;
+	background-color: transparent;
+	border: 1px solid $color-gray;
+
+	&:hover,
+	&:focus,
+	&.--active {
+		color: $color-darker !important;
+		background-color: $color-gray-dim;
+		border: 1px solid $color-gray;
+	}
+}
+
+.tab__link--color-dark {
+	@extend .tab__link--base;
+	background-color: #e0e0e0;
+	color: $color-darker;
+
+	@include when-device-is-at-most('small') {
+		background-color: transparent;
+	}
+
+	&:hover {
+		color: $color-light;
+		background-color: $color-dark;
+	}
+
+	&:focus,
+	&.--active {
+		color: $color-light;
+		background-color: $color-darker;
+	}
+
+	&.--disabled:hover {
+		@extend .tab__link--base;
+		background-color: #e0e0e0;
+		color: $color-darker !important;
+
+		&.--active {
+			color: $color-light !important;
+			background-color: $color-darker;
+		}
+	}
+}
+
+.tab__link--color-green {
+	@extend .tab__link--base;
+	color: $color-green;
+	background-color: transparent;
+	border: 1px solid $color-green;
+
+	&:hover,
+	&:focus,
+	&.--active {
+		color: $color-white !important;
+		background-color: $color-green;
+	}
+}
+
+.tab__link--color-yellow {
+	@extend .tab__link--base;
+	background-color: $color-yellow-dark;
+
+	&:hover,
+	&:focus,
+	&.--active {
+		background-color: $color-yellow-darker;
+	}
+}
+
+.tab__link--color-blue {
+	@extend .tab__link--base;
+	background-color: $color-blue-dark;
+
+	&:hover,
+	&:focus,
+	&.--active {
+		background-color: $color-blue-darker;
+	}
+}
+
+.tab__link--color-purple {
+	@extend .tab__link--base;
+	background-color: $color-purple;
+
+	&:hover,
+	&:focus,
+	&.--active {
+		background-color: $color-purple-dim;
+	}
+}

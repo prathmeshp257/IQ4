@@ -1,0 +1,14 @@
+.ratio-bar {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+
+	&__percentage {
+		color: $color-white;
+		font-weight: bold;
+		background-clip: padding-box;
+		font-size: 13px;
+		z-index: 1;
+		margin: 0;
+	}
+}

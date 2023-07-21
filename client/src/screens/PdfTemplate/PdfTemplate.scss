@@ -1,0 +1,166 @@
+.common-header-footer {
+	height: 100px;
+	font-weight: bold;
+	position: fixed;
+	width: 0;
+	left: 0;
+	right: 0;
+	font-size: 30;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: black;
+	text-align: center;
+	opacity: 0.7;
+}
+
+.pdf {
+	opacity: 0;
+	height: 0 !important;
+
+	&__header {
+		@extend .common-header-footer;
+		top: 0;
+		display: flex;
+		justify-content: space-between;
+
+		&__left {
+			margin-left: 16px;
+			width: 0;
+		}
+
+		&__right {
+			width: 0;
+			height: 80%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&__content {
+		width: 98% !important;
+		padding: 0.4cm;
+	}
+
+	&__footer {
+		@extend .common-header-footer;
+		bottom: 0;
+	}
+
+	&__overlay {
+		width: 100%;
+		height: 100%;
+		font-weight: bold;
+		color: lightgreen;
+		position: fixed;
+		top: 0;
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		opacity: 0.1;
+	}
+}
+
+@page {
+	margin: 0;
+}
+
+@media print {
+	.pdf {
+		opacity: 1;
+
+		&__overlay {
+			display: flex;
+			padding: 0.4cm;
+		}
+
+		&__content {
+			padding: 0.4cm;
+		}
+
+		&__header {
+			padding: 0 0.4cm;
+			padding-top: 1cm;
+
+			&__left {
+				width: unset;
+			}
+
+			&__right {
+				width: unset;
+			}
+		}
+		&__footer {
+			width: 100%;
+			margin: 0;
+			padding-bottom: 1cm;
+
+			img {
+				width: 100%;
+				margin: 0;
+			}
+		}
+	}
+
+	.common-header-footer {
+		width: 100%;
+	}
+
+	.navbar,
+	.footer,
+	.reports,
+	.reports__refine-menu,
+	.shell__heading,
+	.divider-light,
+	.divider-default,
+	.ant-picker-dropdown,
+	.insights__refine-menu,
+	.vehicles-area,
+	.flex-container,
+	.card-with-tabs__spinner,
+	.reports-area {
+		opacity: 0 !important;
+		display: none !important;
+	}
+
+	.card-with-tabs{
+		box-shadow:unset !important;
+		border-radius:unset !important;
+		margin:0 !important;
+		padding: 0 !important;
+	}
+
+	.shell,
+	.shell__center {
+		padding: 0 !important;
+		margin: 0 !important;
+		background: transparent !important;
+	}
+
+	.report {
+		page-break-inside: avoid;
+	}
+
+	.chartjs-render-monitor {
+		min-height: 100% !important;
+		max-width: 100% !important;
+		max-height: 100% !important;
+		height: 180px !important;
+		width: auto !important;
+	}
+
+	.graph {
+		margin-top: 8%;
+		margin-bottom: 15;
+	}
+
+	.graph2 {
+		page-break-before: always;
+		margin-top: 8%;
+		margin-bottom: 15;
+	}
+}

@@ -1,0 +1,41 @@
+@import './breakpoints';
+@import './colors';
+@import './overrides';
+@import './spacing';
+@import './typography';
+@import './vars';
+
+@import '../../components/index.scss';
+@import '../../screens/index.scss';
+@import '../../containers/index.scss';
+
+html {
+  height: 100%;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+b,
+strong {
+  transform: scale(1, 0.96);
+}
+
+*:focus {
+  outline: none;
+}
+// 29 april 2022

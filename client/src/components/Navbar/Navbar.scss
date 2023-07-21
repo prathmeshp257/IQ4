@@ -1,0 +1,144 @@
+.navbar {
+	position: fixed;
+	z-index: 99999;
+	width: 100%;
+	display: flex;
+	padding: 8px 20px;
+	background-color: $color-purple-dark;
+	height: 11vh;
+	justify-content: center;
+
+	@include when-device-is-at-most('small') {
+		height: unset;
+
+		p {
+			font-size: 12px;
+			margin-top: 4px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__wrapper {
+		
+		max-width: $space-max-width;
+		width: 100%;
+		align-content: center;
+		
+	}
+
+	&__container {
+		
+		width: 100%;
+		margin: auto;
+		flex-wrap: wrap;
+		height: 100%;
+		// justify-content: center;
+	}
+
+	&__logo {
+		cursor: pointer;
+		border-radius: 0px;
+		overflow: hidden;
+		justify-items: center;
+		background-color: transparent;
+		border-radius: 4px;
+		height: 100%;
+		margin: auto 0;
+	}
+
+	&__img {
+		height: auto;
+		max-width: 120px;
+	}
+
+	&__logo-icon {
+		font-size: 26px !important;
+		margin: auto;
+		margin-right: 8px;
+		border-radius: 100%;
+		border: 1px solid $color-light;
+		padding: 4px;
+	}
+
+	&__icon {
+		font-size: 24px !important;
+		margin: auto;
+		margin-right: 8px;
+		padding: 4px;
+	}
+
+	&__title {
+		margin: 0;
+		width: max-content;
+		color: $color-light;
+		align-self: center;
+	}
+
+	&__tabs {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+
+		@include when-device-is-at-most('small') {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 0 10px;
+			background-color: $color-purple-dark;
+		}
+
+		&__tag {
+			border: 1px solid $color-danger;
+			background-color: $color-danger;
+			color: white;
+			padding: 2px 4px;
+			border-radius: 4px;
+			font-size: 10px;
+
+			@include when-device-is-at-most('small') {
+				font-size: 8px;
+				margin-left: 4px;
+			}
+		}
+
+		.tab {
+			margin-right: 4px;
+		}
+
+		&__nav-tabs {
+			@include when-device-is-at-most('small') {
+				margin: auto;
+				width: 100%;
+				justify-content: space-between;
+			}
+		}
+
+		@include when-device-is-at-most('small') {
+			width: 100% !important;
+
+			button {
+				width: 100% !important;
+			}
+
+			> div.tab {
+				right: 0;
+				position: absolute;
+				top: 19px;
+			}
+		}
+	}
+
+	&__divider {
+		padding: 0.5px;
+		background-color: $color-light-dim;
+		height: 24px;
+		margin: auto 4px;
+		border: 0px solid white;
+
+		@include when-device-is-at-most('small') {
+			display: none;
+		}
+	}
+}

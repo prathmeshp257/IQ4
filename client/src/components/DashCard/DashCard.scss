@@ -1,0 +1,119 @@
+.dash-card {
+	display: flex;
+	margin: 8px 0px;
+	background: #eeeeee;
+	border-radius: 10px;
+
+	&__variant-default {
+		min-width: 180px;
+	}
+
+	&__variant-stat {
+		min-width: 250px;
+	}
+
+	&__variant-live {
+		min-width: 180px;
+		max-width: 180px;
+	}
+
+	&__variant-compact {
+		min-width: 150px;
+	}
+
+	&__main-default {
+		padding: 12px 0 12px 12px;
+		width: 75%;
+	}
+
+	&__main-compact {
+		padding: 12px 0 12px 12px;
+		width: 100%;
+	}
+
+	&__ratio {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		position: relative;
+		background: $color-darkGray;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		min-width: 70px;
+		margin-left: 16px;
+		overflow: hidden;
+	}
+
+	&__ratio-row {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		position: relative;
+		background: $color-darkGray;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		min-width: 40px;
+		margin-left: 16px;
+		overflow: hidden;
+	}
+
+	&__content {
+		display: flex;
+		align-items: baseline;
+		margin-right:16px;
+	}
+
+	&__value {
+		margin-top: 4px;
+		font-weight: 600;
+		font-size: 22px;
+	}
+
+	&__title {
+		margin: 0px;
+		font-size: 13px;
+		font-weight: 600;
+		margin-right:16px;
+	}
+
+	&__type {
+		margin-left: 4px;
+		font-size: 13px;
+	}
+
+	&__diff {
+		align-self: center;
+		align-items: center;
+		justify-content: flex-end;
+		margin-right: 16px;
+		width: 160px;
+		cursor: pointer;
+	}
+
+	&__diff-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 16px;
+		height: 16px;
+		min-width: 16px;
+		min-height: 16px;
+		border-radius: 16px;
+		cursor: pointer;
+		color: white;
+		font-size: 12px;
+	}
+
+	&__diff-percent-up,
+	&__diff-percent-down,
+	&__diff-percent-stale {
+		width: max-content;
+		font-size: 10px;
+		font-weight: 600;
+	}
+}
+
+.title--base {
+	font-size: 19px;
+	font-weight: 600;
+}

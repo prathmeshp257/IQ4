@@ -1,0 +1,149 @@
+@mixin transition-ease-quick {
+	transition: ease 165ms;
+}
+
+@mixin transition-ease-medium {
+	transition: ease 265ms;
+}
+
+@mixin floating-card {
+	background-color: rgba(251, 251, 251, 0.7);
+	backdrop-filter: blur(30px);
+	box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.32), 0 6px 16px 0 rgba(0, 0, 0, 0.1), 0 9px 28px 4px rgba(0, 0, 0, 0.1);
+}
+
+// MARGIN
+.--no-margin {
+	margin: 0;
+}
+
+.--margin-right-small {
+	margin-right: 4px !important;
+}
+
+.--margin-right-medium {
+	margin-right: 8px !important;
+}
+
+.--margin-right-large {
+	margin-right: 16px !important;
+}
+
+.--margin-left-small {
+	margin-left: 4px;
+}
+
+.--margin-left-medium {
+	margin-left: 8px;
+}
+
+.--margin-left-large {
+	margin-left: 16px;
+}
+
+.--margin-top-small {
+	margin-top: 4px;
+}
+
+.--margin-top-medium {
+	margin-top: 8px;
+}
+
+.--margin-top-large {
+	margin-top: 16px;
+}
+
+.--margin-bottom-small {
+	margin-bottom: 4px;
+}
+
+.--margin-bottom-medium {
+	margin-bottom: 8px;
+}
+
+.--margin-bottom-large {
+	margin-bottom: 16px !important;
+}
+
+.--margin-all-small {
+	margin: 4px;
+}
+
+.--margin-all-medium {
+	margin: 8px;
+}
+
+.--margin-all-large {
+	margin: 16px;
+}
+
+// PADDING
+.--no-padding {
+	padding: 0;
+}
+
+.--padding-right-small {
+	padding-right: 4px;
+}
+
+.--padding-right-medium {
+	padding-right: 8px;
+}
+
+.--padding-right-large {
+	padding-right: 16px;
+}
+
+.--padding-left-small {
+	padding-left: 4px;
+}
+
+.--padding-left-medium {
+	padding-left: 8px;
+}
+
+.--padding-left-large {
+	padding-left: 16px;
+}
+
+.--padding-top-small {
+	padding-top: 4px;
+}
+
+.--padding-top-medium {
+	padding-top: 8px;
+}
+
+.--padding-top-large {
+	padding-top: 16px;
+}
+
+.--padding-bottom-small {
+	padding-bottom: 4px;
+}
+
+.--padding-bottom-medium {
+	padding-bottom: 8px;
+}
+
+.--padding-bottom-large {
+	padding-bottom: 16px;
+}
+
+.--padding-all-small {
+	padding: 4px;
+}
+
+.--padding-all-medium {
+	padding: 8px;
+}
+
+.--padding-all-large {
+	padding: 16px;
+}
+
+// MISC
+
+.--disabled {
+	cursor: not-allowed !important;
+}

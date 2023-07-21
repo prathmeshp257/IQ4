@@ -1,0 +1,16 @@
+/* TYPOGRAPHY */
+$text-unit: 1rem;
+$text-base-size: 1em;
+$text-scale-ratio: 1.2;
+
+$text-xs: calc((#{$text-unit} / #{$text-scale-ratio}) / #{$text-scale-ratio});
+$text-sm: calc(#{$text-xs} * #{$text-scale-ratio});
+$text-ms: calc(#{$text-xs} * #{$text-scale-ratio} * #{$text-scale-ratio} * 0.86);
+$text-mx: calc(#{$text-xs} * #{$text-scale-ratio} * #{$text-scale-ratio} * 0.92);
+$text-mc: calc(#{$text-sm} * #{$text-scale-ratio} * #{$text-scale-ratio} * 0.92);
+$text-md: calc(#{$text-sm} * #{$text-scale-ratio} * #{$text-scale-ratio});
+$text-lg: calc(#{$text-md} * #{$text-scale-ratio});
+$text-xl: calc(#{$text-lg} * #{$text-scale-ratio});
+$text-xxl: calc(#{$text-xl} * #{$text-scale-ratio});
+$text-xxxl: calc(#{$text-xxl} * #{$text-scale-ratio});
+$text-xxxxl: calc(#{$text-xxxl} * #{$text-scale-ratio});

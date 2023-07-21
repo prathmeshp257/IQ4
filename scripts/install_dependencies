@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Pulling dependencies"
+docker image prune -f
+cd /home/ubuntu/iq4-web-staging
+docker build . -t iq4-web-staging

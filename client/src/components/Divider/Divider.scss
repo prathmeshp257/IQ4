@@ -1,0 +1,16 @@
+.divider-base {
+	margin-bottom: $space-sm;
+	margin-top: $space-sm;
+	height: 1px;
+	border: none;
+	border-radius: 2px;
+}
+.divider-default {
+	@extend .divider-base;
+	background-color: $color-gray;
+}
+
+.divider-light {
+	@extend .divider-base;
+	background-color: $color-lightGray;
+}

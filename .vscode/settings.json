@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "node_modules": true,
+        ".vscode": true,
+        "Procfile": true,
+        "README.md": true,
+        "static.json": true,
+        "yarn.lock": true,
+        "client/node_modules": true
+    },
+    "workspace.isHidden": true
+}

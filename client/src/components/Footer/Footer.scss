@@ -1,0 +1,12 @@
+.footer {
+	width: 100%;
+	background-color: $color-purple-dark;
+
+	@include when-device-is-at-most('small') {
+		visibility: hidden;
+	}
+
+	&__container {
+		height: 40px;
+	}
+}

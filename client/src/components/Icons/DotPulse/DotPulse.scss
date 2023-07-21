@@ -1,0 +1,43 @@
+.dot-pulse {
+	&__container {
+		width: 14px;
+		height: 14px;
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+
+	&__circle {
+		width: 8px;
+		height: 8px;
+		background-color: $color-green;
+		border-radius: 50%;
+	}
+
+	&__pulse {
+		border: 2px solid $color-green-pale;
+		border-radius: 30px;
+		height: 18px;
+		width: 18px;
+		position: absolute;
+		top: -2px;
+		left: -5px;
+		animation: pulsate 1.2s ease-out;
+		animation-iteration-count: infinite;
+		opacity: 0;
+	}
+
+	@keyframes pulsate {
+		0% {
+			-webkit-transform: scale(0.1, 0.1);
+			opacity: 0;
+		}
+		50% {
+			opacity: 1;
+		}
+		100% {
+			-webkit-transform: scale(1.2, 1.2);
+			opacity: 0;
+		}
+	}
+}

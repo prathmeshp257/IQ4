@@ -1,0 +1,29 @@
+.iqStats {
+	&__container-mode-row {
+		display: inline;
+	}
+	&__option-hover:hover{
+		background-color: white;
+	}
+
+	&__container-mode-col {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		&__card {
+			max-width: 300px;
+
+			@include when-device-is-at-most('small') {
+				max-width: unset;
+				width: 100%;
+			}
+
+			.dash-card.dash-card__variant-default,
+			.dash-card.dash-card__variant-stat,
+			.dash-card.dash-card__variant-compact {
+				width: 100%;
+			}
+		}
+	}
+}

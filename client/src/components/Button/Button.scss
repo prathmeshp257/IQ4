@@ -1,0 +1,69 @@
+.button {
+	display: flex;
+	height: 38px;
+	cursor: pointer;
+	outline: none;
+	padding: 5px 0px;
+	min-width: 120px;
+	border-radius: 10px;
+	transition: 0.2s;
+	justify-content: center;
+	align-items: center;
+	transition: cubic-bezier(0.35, 0.94, 0.74, 0.39) 200ms;
+	outline: none !important;
+
+	&__icon {
+		display: flex;
+		margin: 0;
+	}
+
+	&__text {
+		margin: auto;
+		font-weight: 600;
+		font-size: 13px;
+		color: $color-light;
+		width: max-content;
+	}
+}
+
+.button--filled {
+	border: 1px solid transparent;
+	color: $color-white;
+	background-color: $color-purple-dark;
+
+	&:hover,
+	&:focus {
+		transition: cubic-bezier(0.35, 0.94, 0.74, 0.39) 100ms;
+		background-color: $color-purple-darker;
+		outline: none !important;
+	}
+}
+
+.button--outline {
+	border: 1px solid #d9d9d9;
+	color: $color-purple-dark-dim;
+	background-color: $color-white;
+	@include transition-ease-quick;
+
+	&:hover,
+	&:focus {
+		@include transition-ease-quick;
+		color: $color-purple-dark;
+		border: 1px solid #4144549f;
+		outline: none !important;
+
+		p {
+			@include transition-ease-quick;
+			color: $color-purple-darker;
+		}
+	}
+
+	p {
+		@include transition-ease-quick;
+		color: $color-purple-dark;
+	}
+}
+
+.button--full-width {
+	width: 100% !important;
+}
