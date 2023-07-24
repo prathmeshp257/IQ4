@@ -2,7 +2,7 @@
 require('dotenv').config()
 
 // Live
-    const baseUrl = "http://anpr-staging-env.eba-grcbjd8e.eu-west-1.elasticbeanstalk.com";
+    const baseUrl = "http://anpr-api.eu-west-1.elasticbeanstalk.com";
 
 // Staging
     // const baseUrl = "http://anpr-staging-env.eba-grcbjd8e.eu-west-1.elasticbeanstalk.com"
