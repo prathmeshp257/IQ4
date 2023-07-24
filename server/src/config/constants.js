@@ -5,7 +5,7 @@ require('dotenv').config()
     const baseUrl = "http://anpr-api.eu-west-1.elasticbeanstalk.com";
 
 // Staging
-    // const baseUrl = "https://iq4-api.iq4-staging.tk"
+    // const baseUrl = "http://anpr-staging-env.eba-grcbjd8e.eu-west-1.elasticbeanstalk.com"
 
 
 // Local/ Development/ Testing
